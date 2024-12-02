@@ -16,6 +16,7 @@ function getGrade(marks){
 }
 }
 
-let studentGrade = 77; // Example input
+// Example input
+let studentGrade = 77; 
 let grade = getGrade(studentGrade)
 console.log(grade)
