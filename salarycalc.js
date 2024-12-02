@@ -64,7 +64,7 @@ function calculateNetSalary() {
     }
 
     // Calculate NSSF Deduction
-    let nssfDeduction = Math.min(grossSalary * 0.06, 18000 * 0.06);
+    let nssfDeduction = (grossSalary * 0.06, 18000 * 0.06);
 
     // Calculate Net Salary
     let netSalary = grossSalary - (payee + nhifDeduction + nssfDeduction);
@@ -77,5 +77,4 @@ function calculateNetSalary() {
     console.log("Net Salary: KES " + netSalary.toFixed(2));
 }
 
-// Run the function
 calculateNetSalary();
