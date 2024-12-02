@@ -3,10 +3,6 @@ function calculateNetSalary() {
     let basicSalaryInput = prompt("Enter your basic salary:");
     let benefitsInput = prompt("Enter your benefits:");
 
-    // Convert inputs to numbers
-    let basicSalary = Number(basicSalaryInput);
-    let benefits = Number(benefitsInput);
-
     // Calculate Gross Salary
     let grossSalary = basicSalary + benefits;
 
@@ -23,7 +19,7 @@ function calculateNetSalary() {
     // Apply personal relief
     const personalRelief = 2400;
     payee = payee - personalRelief;
-    if (payee < 0) payee = 0; // Manually ensuring PAYE is not negative
+    if (payee < 0) payee = 0; 
 
     // Calculate NHIF Deduction
     let nhifDeduction = 0;
